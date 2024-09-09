@@ -1,0 +1,20 @@
+### POST login
+
+POST http://localhost:8000/api-token-auth/
+Content-Type: application/json
+
+{"username": "Customer1", "password": "coursera@123!"}
+
+### GET menus
+
+GET http://localhost:8000/restaurant/menu/
+Content-Type: application/json
+Authorization: token 07c22fb42cf1b1a0eba935411dd601055c8567d0
+
+### POST menus
+
+POST http://localhost:8000/restaurant/menu/
+Content-Type: application/json
+Authorization: token 07c22fb42cf1b1a0eba935411dd601055c8567d0
+
+{"title": "Chicken Tikka Masala", "price": 10.0, "inventory": "7"}
